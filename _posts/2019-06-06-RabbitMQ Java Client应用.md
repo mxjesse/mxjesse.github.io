@@ -6,14 +6,14 @@
 #### 安装
 建议在本地测试使用docker安装，具体安装方法可以百度一下。
   
-
+`PS: RabbiqMQ的默认访问端口为5672，默认管理端口为15672`
 ### Springboot整合RabbitMQ
 #### POM导入依赖
 ```
-	<dependency>
-	    <groupId>org.springframework.boot</groupId>
-	    <artifactId>spring-boot-starter-amqp</artifactId>
-	</dependency>
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-amqp</artifactId>
+</dependency>
 ```
 
 #### application.properties配置
@@ -25,3 +25,6 @@ spring.rabbitmq.username=guest
 spring.rabbitmq.password=guest
 spring.rabbitmq.port=5672
 ```
+
+#### 生产者代码
+
