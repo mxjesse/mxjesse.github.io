@@ -16,7 +16,7 @@ JPA 中能够支持面向对象的高级特性，如类之间的继承、多态�
 更多的JPA知识可以自己相关学习下.
 
 ### 3.配置Spring Boot 数据源和JPA配置
-![Jpa配置](https://img-blog.csdn.net/20180604003210742?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L214amVzc2U=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![Jpa配置](https://raw.githubusercontent.com/mxjesse/mxjesse.github.io/master/img_floder/20180604003210742.png)
 
 
 1. 配置Spring Boot的maven依赖
