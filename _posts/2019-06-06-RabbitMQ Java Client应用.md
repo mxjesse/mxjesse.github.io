@@ -44,7 +44,7 @@
 	
 5.RPC（RPC模式）
 	
-	此模式不多介绍了，具体参见这里: [RabbitMQ RPC](https://www.cnblogs.com/LiangSW/p/6216537.html)
+此模式不多介绍了，具体参见这里:[RabbitMQ RPC](https://www.cnblogs.com/LiangSW/p/6216537.html)
 	
 ##### 消息确认机制 Message Acknowledge
 
