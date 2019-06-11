@@ -28,12 +28,14 @@
 
 	精确匹配，当消息的RoutingKey和BindingKey完全匹配，则将消息发送到此Queue。
 	RabbitMQ默认提供了一个	Exchange，名字为空字符串，类型为Direct，绑定到所有的Queue（每个Queue与这个无名Exchange之间的BindingKey是Queue的名称），所以我们没使用交换机的时候使用的是默认的Exchange。
+
 3.Topic（通配符模式）
 
 	按照正则表达式模糊匹配，用消息的RoutingKey和BindingKey进行模糊匹配，匹配成功则将消息发送到对应Queue。
 	RoutingKey是以"."分隔的字符串，例如"first.last"，BindingKey和RoutingKey一样也为"."分隔的字符串，BindingKey中有两种通配符
 	* "*"：用于匹配一个单词
 	* "#"：用于匹配多个单词，可以为0个
+
 4.Headers（键值对模式）
 
 	此模式不依赖RoutingKey和BindingKey的匹配规则来转发消息，交换机的路由规则是通过消息头的Headers属性来进行匹配转发，类似于Http请求的header。
@@ -41,11 +43,11 @@
 	在绑定Queue和Exchange时指定一组键值对，键值对包含一个一个键"x-match"，这个键的值可以是"any"和"all"，"all"代表消息携带的Hash要完全匹配，"any"代表匹配一个以上的键。
 	
 	当消息发送到Exchange，交换机会获取到该消息的Headers，对比其中的键值对是否完全匹配Queue和Exchange绑定时指定的BindingKey，如果匹配则转发到此Queue。
-	
+
 5.RPC（RPC模式）
 	
-	此模式不多介绍了，具体参见这里:[RabbitMQ RPC](https://www.cnblogs.com/LiangSW/p/6216537.html)
-	
+此模式不多介绍了，具体参见这里:[RabbitMQ RPC](https://www.cnblogs.com/LiangSW/p/6216537.html)
+
 ##### 消息确认机制 Message Acknowledge
 
 
