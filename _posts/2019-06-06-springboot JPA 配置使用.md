@@ -16,7 +16,7 @@ JPA 中能够支持面向对象的高级特性，如类之间的继承、多态�
 更多的JPA知识可以自己相关学习下.
 
 ### 3.配置Spring Boot 数据源和JPA配置
-![Jpa配置](https://raw.githubusercontent.com/mxjesse/mxjesse.github.io/master/img_floder/201906/20180604003210742.png)
+![Jpa配置](https://raw.githubusercontent.com/mxjesse/mxjesse.github.io/master/img_folder/201906/20180604003210742.png)
 
 
 1. 配置Spring Boot的maven依赖
@@ -148,8 +148,8 @@ JPA 中能够支持面向对象的高级特性，如类之间的继承、多态�
 	```
 	
 	执行insert方法，可以看到console面板输出sql语句；查看数据库，能看到表已经被创建，同时插入了一条信息
-	![insert输出sql](https://raw.githubusercontent.com/mxjesse/mxjesse.github.io/master/img_floder/201906/20180604003819244.png)
-	![这里写图片描述](https://raw.githubusercontent.com/mxjesse/mxjesse.github.io/master/img_floder/201906/20180604003941116.png)
+	![insert输出sql](https://raw.githubusercontent.com/mxjesse/mxjesse.github.io/master/img_folder/201906/20180604003819244.png)
+	![这里写图片描述](https://raw.githubusercontent.com/mxjesse/mxjesse.github.io/master/img_folder/201906/20180604003941116.png)
 	
 	依次执行以下几个测试方法，都能看到修改、查询和删除生效，此处配置已经都OK.
 
@@ -171,5 +171,5 @@ JPA 中能够支持面向对象的高级特性，如类之间的继承、多态�
 	}
 	```
 	执行结果
-	![自定义jpa查询](https://raw.githubusercontent.com/mxjesse/mxjesse.github.io/master/img_floder/201906/20180604011056586.png)
+	![自定义jpa查询](https://raw.githubusercontent.com/mxjesse/mxjesse.github.io/master/img_folder/201906/20180604011056586.png)
 此外，Spring JpaRepository还有其他很多方便的使用方法，有时间可以多了解下，这里就不多说.

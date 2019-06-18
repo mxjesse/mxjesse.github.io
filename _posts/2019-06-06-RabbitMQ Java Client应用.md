@@ -100,7 +100,7 @@ public class ProducerController {
 }
 ```
 手动在RabbitMQ管理服务器新建名为“myQueue”的队列
-![新建队列](https://raw.githubusercontent.com/mxjesse/mxjesse.github.io/master/img_floder/201906/1559809389451.jpg)
+![新建队列](https://raw.githubusercontent.com/mxjesse/mxjesse.github.io/master/img_folder/201906/1559809389451.jpg)
 
 #### 消费者代码
 ```
@@ -125,7 +125,7 @@ public class ConsumerListener {
 #### 测试消息发送和消费方法
 在浏览器打开RabbitMQ的管理页面[http://127.0.0.1:8080/producer/send?msg=你好，朋友](http://127.0.0.1:8080/producer/send?msg=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%9C%8B%E5%8F%8B)
 
-![浏览器访问发送消息地址](https://raw.githubusercontent.com/mxjesse/mxjesse.github.io/master/img_floder/201906/1559809684382.jpg)
+![浏览器访问发送消息地址](https://raw.githubusercontent.com/mxjesse/mxjesse.github.io/master/img_folder/201906/1559809684382.jpg)
 
 在控制台看到输出如下：
-![浏览器访问发送消息地址](https://raw.githubusercontent.com/mxjesse/mxjesse.github.io/master/img_floder/201906/1559809707954.jpg)
+![浏览器访问发送消息地址](https://raw.githubusercontent.com/mxjesse/mxjesse.github.io/master/img_folder/201906/1559809707954.jpg)
