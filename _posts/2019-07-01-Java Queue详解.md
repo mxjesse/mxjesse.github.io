@@ -52,155 +52,155 @@ PriorityQueue保存队列元素的顺序不是按照元素添加的顺序来保�
 	定制排序：创建PriorityQueue队列时，传入一个Comparable对象，该对象负责对所有队列中的所有元素进行排序。采用定制排序不要求必须实现Comparator接口。
 
   ```
-	  /**
-	  * @author mx
-	  * @date 2019/7/1 5:07 PM
-	  */
-	  public class PriorityQueueTest {
+	/**
+	* @author mx
+	* @date 2019/7/1 5:07 PM
+	*/
+	public class PriorityQueueTest {
 	  
-	    public static void main(String[] args) {
+	public static void main(String[] args) {
 	  
-	      PriorityQueue queue = new PriorityQueue();
-	        queue.add(6);
-	        queue.offer(-3);
-		     queue.add(20);
-		     queue.offer(18);
+	  PriorityQueue queue = new PriorityQueue();
+	    queue.add(6);
+	    queue.offer(-3);
+	     queue.add(20);
+	     queue.offer(18);
 		
-	  //        queue.add("123");
-	  //        queue.offer("c");
-	  //        queue.add("bsdsada");
-	  //        queue.add(null);
+	//        queue.add("123");
+	//        queue.offer("c");
+	//        queue.add("bsdsada");
+	//        queue.add(null);
 		
-	        while (queue.size() > 0) {
-	          System.out.println(queue.remove());
-	        }
+	    while (queue.size() > 0) {
+	      System.out.println(queue.remove());
 	    }
-	  }
-  	  //输出结果
-	  -3
-	  6
-	  18
-	  20
+	}
+	}
+	//输出结果
+	-3
+	6
+	18
+	20
   ```
 	
 2. **Deque**  
 Deque为Queue的一个子接口，代表了一个双端队列，Deque定义了一些方法：
   
   ```
-	  void addFirst(Object e): 　　将指定元素添加到双端队列的头部。
+  void addFirst(Object e): 　　将指定元素添加到双端队列的头部。
 	
-	  void addLast(Object e):　　将指定元素添加到双端队列的尾部。
-		
-	  Iterator descendingItrator():　　返回该双端队列对应的迭代器，该迭代器以逆向顺序来迭代队列中的元素。
-		
-	  Object getFirst():　　获取但不删除双端队列的第一个元素。
-		
-	  Object getLast():　　获取但不删除双端队列的最后一个元素。
-		
-	  boolean offFirst(Object e):　　将指定元素添加到双端队列的头部。
-		
-	  boolean offLast(OBject e):　　将指定元素添加到双端队列的尾部。
-		
-	  Object peekFirst():　　获取但不删除双端队列的第一个元素；如果双端队列为空，则返回null。
-		
-	  Object PeekLast():　　获取但不删除双端队列的最后一个元素；如果双端队列为空，则返回null。
-		
-	  Object pollFirst():　　获取并删除双端队列的第一个元素；如果双端队列为空，则返回null。
-		
-	  Object pollLast():　　获取并删除双端队列的最后一个元素；如果双端队列为空，则返回null。
-		
-	  Object pop()(栈方法):　　pop出该双端队列所表示的栈的栈顶元素。相当于removeFirst()。
-		
-	  void push(Object e)(栈方法)：　　将一个元素push进该双端队列所表示的栈的栈顶。相当于addFirst()。
-		
-	  Object removeFirst():　　获取并删除该双端队列的第一个元素。
-		
-	  Object removeFirstOccurence(Object o):　　删除该双端队列的第一次出现的元素o。
-		
-	  Object removeLast():　　获取并删除该双端队列的最后一个元素o。
-		
-	  Object removeLastOccurence(Object o):　　删除该双端队列的最后一次出现的元素o。
+  void addLast(Object e):　　将指定元素添加到双端队列的尾部。
+	
+  Iterator descendingItrator():　　返回该双端队列对应的迭代器，该迭代器以逆向顺序来迭代队列中的元素。
+	
+  Object getFirst():　　获取但不删除双端队列的第一个元素。
+	
+  Object getLast():　　获取但不删除双端队列的最后一个元素。
+	
+  boolean offFirst(Object e):　　将指定元素添加到双端队列的头部。
+	
+  boolean offLast(OBject e):　　将指定元素添加到双端队列的尾部。
+	
+  Object peekFirst():　　获取但不删除双端队列的第一个元素；如果双端队列为空，则返回null。
+	
+  Object PeekLast():　　获取但不删除双端队列的最后一个元素；如果双端队列为空，则返回null。
+	
+  Object pollFirst():　　获取并删除双端队列的第一个元素；如果双端队列为空，则返回null。
+	
+  Object pollLast():　　获取并删除双端队列的最后一个元素；如果双端队列为空，则返回null。
+	
+  Object pop()(栈方法):　　pop出该双端队列所表示的栈的栈顶元素。相当于removeFirst()。
+	
+  void push(Object e)(栈方法)：　　将一个元素push进该双端队列所表示的栈的栈顶。相当于addFirst()。
+	
+  Object removeFirst():　　获取并删除该双端队列的第一个元素。
+	
+  Object removeFirstOccurence(Object o):　　删除该双端队列的第一次出现的元素o。
+	
+  Object removeLast():　　获取并删除该双端队列的最后一个元素o。
+	
+  Object removeLastOccurence(Object o):　　删除该双端队列的最后一次出现的元素o。
   ```
   
   ArrayDeque例子：
   
   ```
-	  /**
-	   * @author mx
-	   * @date 2019/7/1 5:37 PM
-	   */
-	  public class ArrayDequeTest {
+  /**
+   * @author mx
+   * @date 2019/7/1 5:37 PM
+   */
+  public class ArrayDequeTest {
 	
-	    public static void main(String[] args) {
+    public static void main(String[] args) {
 	
-	      ArrayDeque<Object> deque = new ArrayDeque<>();
+      ArrayDeque<Object> deque = new ArrayDeque<>();
 	
-	        deque.add("tom");
-	        deque.offer("lucy");
-	        deque.offer("jack");
+        deque.add("tom");
+        deque.offer("lucy");
+        deque.offer("jack");
 	
-	        System.out.println(deque);
-	        //输出[tom, lucy, jack]
+        System.out.println(deque);
+        //输出[tom, lucy, jack]
 	
-	        System.out.println(deque.peek());
-	        //输出tom
+        System.out.println(deque.peek());
+        //输出tom
 	
-	        System.out.println(deque);
-	        //输出[tom, lucy, jack]
+        System.out.println(deque);
+        //输出[tom, lucy, jack]
 	
-	        System.out.println(deque.poll());
-	        //输出tom
+        System.out.println(deque.poll());
+        //输出tom
 	
-	        System.out.println(deque);
-	        //输出[lucy, jack]
-	      }
-	  	}
+        System.out.println(deque);
+        //输出[lucy, jack]
+    }
+  }
   ```
   
   ArrayDeque作为Stack例子：
   
   ```
-	  /**
-	  * @author mx
-	  * @date 2019/7/1 5:58 PM
-	  */
-		public class DequeStack {
-		
-	    /**
-	     * 利用ArrayDeque模拟栈的操作
-	     * @param args
-	     */
-	      public static void main(String[] args) {
-	        ArrayDeque<Object> deque = new ArrayDeque<>();
-		
-	        deque.push("Ironman");
-		
-	        deque.push("American Captain");
-		
-	        deque.push("Thor");
-		
-	        System.out.println(deque);
-	        //输出[Thor, American Captain, Ironman]
-		
-	        System.out.println(deque.peek());
-	        //输出Thor
-		
-	        System.out.println(deque);
-	        //输出[Thor, American Captain, Ironman]
-		
-	        System.out.println(deque.pop());
-	        //输出Thor
-		
-	        System.out.println(deque);
-	        //输出[American Captain, Ironman]
-		
-	        System.out.println(deque.pop());
-	        //输出American Captain
-		
-	        System.out.println(deque);
-	        //输出[Ironman]
-	      }
-	  }
+  /**
+  * @author mx
+  * @date 2019/7/1 5:58 PM
+  */
+	public class DequeStack {
+	
+    /**
+     * 利用ArrayDeque模拟栈的操作
+     * @param args
+     */
+      public static void main(String[] args) {
+        ArrayDeque<Object> deque = new ArrayDeque<>();
+	
+        deque.push("Ironman");
+	
+        deque.push("American Captain");
+	
+        deque.push("Thor");
+	
+        System.out.println(deque);
+        //输出[Thor, American Captain, Ironman]
+	
+        System.out.println(deque.peek());
+        //输出Thor
+	
+        System.out.println(deque);
+        //输出[Thor, American Captain, Ironman]
+	
+        System.out.println(deque.pop());
+        //输出Thor
+	
+        System.out.println(deque);
+        //输出[American Captain, Ironman]
+	
+        System.out.println(deque.pop());
+        //输出American Captain
+	
+        System.out.println(deque);
+        //输出[Ironman]
+      }
+  }
   ```
   
 3. **LindedList** 
@@ -208,11 +208,11 @@ Deque为Queue的一个子接口，代表了一个双端队列，Deque定义了�
   源码如下：
   
   ```
-	  public class LinkedList<E>
-	    extends AbstractSequentialList<E>
-	    implements List<E>, Deque<E>, Cloneable, java.io.Serializable {
-	    
-	  }
+  public class LinkedList<E>
+    extends AbstractSequentialList<E>
+    implements List<E>, Deque<E>, Cloneable, java.io.Serializable {
+    
+  }
   ```
   
   可以看到，LindedList是List和Deque的实现，因此它是一个集合，可以根据索引来随机访问集合中的数据。此外，它还是Deque接口的实现类，因此也可以作为一个双端队列，或栈来使用。   
