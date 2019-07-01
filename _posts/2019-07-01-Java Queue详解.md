@@ -43,13 +43,13 @@ public interface Queue<E> extends Collection<E> {
 
 ### 实现类
 1. **PriorityQueue**  
-  PriorityQueue保存队列元素的顺序不是按照元素添加的顺序来保存的，而是在添加元素的时候对元素的大小排序后再保存的。因此在PriorityQueue中使用peek()或pool()取出队列中头部的元素，取出的不是最先添加的元素，而是最小的元素。
+  PriorityQueue保存队列元素的顺序不是按照元素添加的顺序来保存的，而是在添加元素的时候对元素的大小排序后再保存的。因此在PriorityQueue中使用peek()或pool()取出队列中头部的元素，取出的不是最先添加的元素，而是最小的元素。   
 
-  PriorityQueue不允许插入null元素，它还需要对队列元素进行排序，PriorityQueue有两种排序方式：
+  PriorityQueue不允许插入null元素，它还需要对队列元素进行排序，PriorityQueue有两种排序方式：   
 	
-  自然排序：采用自然排序的PriorityQueue集合中的元素必须实现Comparator接口，而且应该是一个类的多个实例，否则可能导致ClassCastException异常。
+  自然排序：采用自然排序的PriorityQueue集合中的元素必须实现Comparator接口，而且应该是一个类的多个实例，否则可能导致ClassCastException异常。   
 	
-  定制排序：创建PriorityQueue队列时，传入一个Comparable对象，该对象负责对所有队列中的所有元素进行排序。采用定制排序不要求必须实现Comparator接口。
+  定制排序：创建PriorityQueue队列时，传入一个Comparable对象，该对象负责对所有队列中的所有元素进行排序。采用定制排序不要求必须实现Comparator接口。   
 
   ```
   /**
