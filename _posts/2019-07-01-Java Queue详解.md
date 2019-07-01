@@ -42,7 +42,7 @@ public interface Queue<E> extends Collection<E> {
   * 不同点：容量为0的时候，element()会抛出异常，peek()返回null
 
 ### 实现类
-  1. **PriorityQueue**  
+1. **PriorityQueue**  
 PriorityQueue保存队列元素的顺序不是按照元素添加的顺序来保存的，而是在添加元素的时候对元素的大小排序后再保存的。因此在PriorityQueue中使用peek()或pool()取出队列中头部的元素，取出的不是最先添加的元素，而是最小的元素。
 
 	PriorityQueue不允许插入null元素，它还需要对队列元素进行排序，PriorityQueue有两种排序方式：
@@ -76,18 +76,17 @@ PriorityQueue保存队列元素的顺序不是按照元素添加的顺序来保�
         }
     }
   }
+  ```  
+  
   ```
-	
-  输出   
-	
-  ```
+  //输出结果
   -3
   6
   18
   20
   ```
 	
-  2. **Deque**  
+2. **Deque**  
 Deque为Queue的一个子接口，代表了一个双端队列，Deque定义了一些方法：
   
   ```
@@ -207,7 +206,7 @@ Deque为Queue的一个子接口，代表了一个双端队列，Deque定义了�
   }
   ```
   
-  3. **LindedList** 
+3. **LindedList** 
 
   源码如下：
   
