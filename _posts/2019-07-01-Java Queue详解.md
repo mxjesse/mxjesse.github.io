@@ -87,7 +87,7 @@ PriorityQueue保存队列元素的顺序不是按照元素添加的顺序来保�
 	```
 	
   2. **Deque**  
-  Deque为Queue的一个子接口，代表了一个双端队列，Deque定义了一些方法：
+Deque为Queue的一个子接口，代表了一个双端队列，Deque定义了一些方法：
   
   ```
   void addFirst(Object e): 　　将指定元素添加到双端队列的头部。
