@@ -85,7 +85,8 @@ public interface Queue<E> extends Collection<E> {
   ```
 	
 2. **Deque**  
-Deque为Queue的一个子接口，代表了一个双端队列，Deque定义了一些方法：
+
+  Deque为Queue的一个子接口，代表了一个双端队列，Deque定义了一些方法：
   
   ```
   void addFirst(Object e): 　　将指定元素添加到双端队列的头部。
@@ -209,8 +210,7 @@ Deque为Queue的一个子接口，代表了一个双端队列，Deque定义了�
   源码如下：
   
   ```
-  public class LinkedList<E>
-    extends AbstractSequentialList<E>
+  public class LinkedList<E> extends AbstractSequentialList<E>
     implements List<E>, Deque<E>, Cloneable, java.io.Serializable {
     
   }
