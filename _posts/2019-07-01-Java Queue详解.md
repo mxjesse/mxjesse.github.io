@@ -51,41 +51,41 @@ PriorityQueue保存队列元素的顺序不是按照元素添加的顺序来保�
 	
 	定制排序：创建PriorityQueue队列时，传入一个Comparable对象，该对象负责对所有队列中的所有元素进行排序。采用定制排序不要求必须实现Comparator接口。
 
-	```
-	/**
-	 * @author mx
-	 * @date 2019/7/1 5:07 PM
-	 */
-	public class PriorityQueueTest {
+  ```
+  /**
+  * @author mx
+  * @date 2019/7/1 5:07 PM
+  */
+  public class PriorityQueueTest {
+  
+    public static void main(String[] args) {
+  
+      PriorityQueue queue = new PriorityQueue();
+        queue.add(6);
+        queue.offer(-3);
+	     queue.add(20);
+	     queue.offer(18);
 	
-	    public static void main(String[] args) {
+  //        queue.add("123");
+  //        queue.offer("c");
+  //        queue.add("bsdsada");
+  //        queue.add(null);
 	
-	        PriorityQueue queue = new PriorityQueue();
-	        queue.add(6);
-	        queue.offer(-3);
-	        queue.add(20);
-	        queue.offer(18);
-	
-	//        queue.add("123");
-	//        queue.offer("c");
-	//        queue.add("bsdsada");
-	//        queue.add(null);
-	
-	        while (queue.size() > 0) {
-	            System.out.println(queue.remove());
-	        }
-	    }
-	}
-	```
+        while (queue.size() > 0) {
+          System.out.println(queue.remove());
+        }
+    }
+  }
+  ```
 	
 	输出
 	
-	```
-	-3
-	6
-	18
-	20
-	```
+  ```
+  -3
+  6
+  18
+  20
+  ```
 	
   2. **Deque**  
 Deque为Queue的一个子接口，代表了一个双端队列，Deque定义了一些方法：
