@@ -43,7 +43,6 @@ public interface Queue<E> extends Collection<E> {
 
 ### 实现类
 1. **PriorityQueue**  
-
   PriorityQueue保存队列元素的顺序不是按照元素添加的顺序来保存的，而是在添加元素的时候对元素的大小排序后再保存的。因此在PriorityQueue中使用peek()或pool()取出队列中头部的元素，取出的不是最先添加的元素，而是最小的元素。
 
   PriorityQueue不允许插入null元素，它还需要对队列元素进行排序，PriorityQueue有两种排序方式：
@@ -53,35 +52,34 @@ public interface Queue<E> extends Collection<E> {
   定制排序：创建PriorityQueue队列时，传入一个Comparable对象，该对象负责对所有队列中的所有元素进行排序。采用定制排序不要求必须实现Comparator接口。
 
   ```
-	/**
-	* @author mx
-	* @date 2019/7/1 5:07 PM
-	*/
-	public class PriorityQueueTest {
+  /**
+  * @author mx
+  * @date 2019/7/1 5:07 PM
+  */
+  public class PriorityQueueTest {
 	  
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 	  
-	  PriorityQueue queue = new PriorityQueue();
-	    queue.add(6);
-	    queue.offer(-3);
-	     queue.add(20);
-	     queue.offer(18);
-		
-	//        queue.add("123");
-	//        queue.offer("c");
-	//        queue.add("bsdsada");
-	//        queue.add(null);
-		
-	    while (queue.size() > 0) {
-	      System.out.println(queue.remove());
-	    }
-	}
-	}
-	//输出结果
-	-3
-	6
-	18
-	20
+      PriorityQueue queue = new PriorityQueue();
+      queue.add(6);
+      queue.offer(-3);
+      queue.add(20);
+      queue.offer(18);	
+    //        queue.add("123");
+    //        queue.offer("c");
+    //        queue.add("bsdsada");
+    //        queue.add(null);
+  	  
+      while (queue.size() > 0) {
+        System.out.println(queue.remove());
+      }
+    }
+  }
+  //输出结果
+  -3
+  6
+  18
+  20
   ```
 	
 2. **Deque**  
